@@ -11,7 +11,10 @@ public interface PeliculaService {
     
     pelicula obtenerpeliculaPorId(Long id);
     
-    pelicula guardarpelicula(pelicula pelicula);
+    static pelicula guardarpelicula(pelicula pelicula) {
+   
+        throw new UnsupportedOperationException("Unimplemented method 'guardarpelicula'");
+    }
     
     pelicula actualizarpelicula(pelicula pelicula);
     
@@ -22,5 +25,9 @@ public interface PeliculaService {
     List<pelicula> buscarPorFechaPublicacion(Date fecha);
     
     String estadoSalaCine(Long idSala);
+
+    static pelicula obtenerPeliculaPorId(Long id) {
+               throw new UnsupportedOperationException("Unimplemented method 'obtenerPeliculaPorId'");
+    }
 }
 

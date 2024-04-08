@@ -24,10 +24,6 @@ public class PeliculaServiceImpl implements PeliculaService {
         return peliculaDao.findById(id).orElse(null);
     }
 
-    @Override
-    public pelicula guardarpelicula(pelicula pelicula) {
-        return peliculaDao.save(pelicula);
-    }
 
     @Override
     public pelicula actualizarpelicula(pelicula pelicula) {
